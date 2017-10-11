@@ -1,8 +1,12 @@
-$("#fa fa-fw fa-heart inc").html(function(i, value) {return +val+1});
-// Your code goes here.
-    $("update").click(function() {
-        $("#fa fa-fw fa-heart inc").html(function(i, value) {return +val+1});
+$(function() {
+    $(".inc").click(function(e){
+        let button = $(this)
+        let currentCount = parseInt(button.Next().text())
+        let newCount = currentCount + 1
+
+        button.next().text() = ` ${newCount} `
     })
+})
 
 //let btns = Array.from(document.getElementsByClassName('inc'))
 
