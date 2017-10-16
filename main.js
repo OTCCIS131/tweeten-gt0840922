@@ -6,6 +6,18 @@ $(function() {
 
         button.next().text() = ` ${newCount} `
     })
+
+    $("#newTweetForm").submit(function (e) {
+        e.preventDefault()
+        let newTweetInput = $("#tweet", $(this))
+        let newTweet = newTweetInput.val()
+
+        if(newTweet.trim() == '') return
+        
+        let newElement = $("li:last-child", $("#tweet")).clone()
+
+        newElement.Next(newTweet)
+    })
 })
 
 //let btns = Array.from(document.getElementsByClassName('inc'))

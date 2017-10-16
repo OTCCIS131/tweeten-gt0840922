@@ -83,26 +83,28 @@
                 </ul>
             </div>
             <div class="col-xs-10 col-sm-5 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center">Compose new Tweet</h3>
-                    </div>
-                    <div class="panel-body">
-                        <textarea name="" id="" rows="3" class="form-control"></textarea>
-                        <br>
-                        <button class="btn btn-info">
-                            <i class="fa fa-fw fa-image"></i>
-                        </button>
-                        <button class="btn btn-info">
-                            <i class="fa fa-fw fa-map-pin"></i>
-                        </button>
-                        <div class="pull-right">
-                            140&nbsp;
-                            <button class="btn btn-primary">Tweet</button>
+                <form id="newTweetForm">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center">Compose new Tweet</h3>
+                        </div>
+                        <div class="panel-body">
+                            <textarea name="" id="" rows="3" class="form-control"></textarea>
+                            <br>
+                            <button class="btn btn-info">
+                                <i class="fa fa-fw fa-image"></i>
+                            </button>
+                            <button class="btn btn-info">
+                                <i class="fa fa-fw fa-map-pin"></i>
+                            </button>
+                            <div class="pull-right">
+                                140&nbsp;
+                                <button class="btn btn-primary">Tweet</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <ul class="media-list list-group">
+                </form>
+                <ul class="media-list list-group" id="tweet">
                     <li class="list-group-item">
                         Tweets • Tweets & Replies • Media
                     </li>
